@@ -105,7 +105,10 @@ const ProductEditScreen = ({ match, history }) => {
         ) : error ? (
           <Message variant='danger'>{error}</Message>
         ) : (
-          <Form onSubmit={submitHandler}>
+          <Form
+            onSubmit={submitHandler}
+            className='shadow p-3 mb-5 bg-white rounded'
+          >
             <Form.Group controlId='name'>
               <Form.Label>Name</Form.Label>
               <Form.Control
