@@ -42,7 +42,10 @@ const RegisterScreen = ({ location, history }) => {
       {message && <Message variant='danger'>{message}</Message>}
       {error && <Message variant='danger'>{error}</Message>}
       {loading && <Loader />}
-      <Form onSubmit={submitHandler}>
+      <Form
+        onSubmit={submitHandler}
+        className='shadow p-3 mb-5 bg-white rounded'
+      >
         <Form.Group controlId='name'>
           <Form.Label>Name</Form.Label>
           <Form.Control

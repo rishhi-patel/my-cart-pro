@@ -42,15 +42,16 @@ const CartScreen = ({ match, location, history }) => {
             {cartItems.map((item) => (
               <ListGroup.Item key={item.product}>
                 <Row>
-                  <Col md={2}>
+                  <Col md={2} className='shadow p-3 mb-5 bg-white rounded '>
                     <Image src={item.image} alt={item.name} fluid rounded />
                   </Col>
                   <Col md={3}>
                     <Link to={`/product/${item.product}`}>{item.name}</Link>
                   </Col>
                   <Col md={2}>${item.price}</Col>
-                  <Col md={2}>
+                  <Col md={2} className='shadow p-3 mb-5 bg-white rounded mt-2'>
                     <Form.Control
+                      className='nav-item dropdown'
                       as='select'
                       value={item.qty}
                       onChange={(e) =>

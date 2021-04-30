@@ -72,7 +72,10 @@ const ProductListScreen = ({ history, match }) => {
 
   return (
     <>
-      <Row className='align-items-center'>
+      <Row
+        className='align-items-center'
+        className='shadow p-3 mb-5 bg-white rounded'
+      >
         <Col>
           <h1>Products</h1>
         </Col>
@@ -92,7 +95,14 @@ const ProductListScreen = ({ history, match }) => {
         <Message variant='danger'>{error}</Message>
       ) : (
         <>
-          <Table striped bordered hover responsive className='table-sm'>
+          <Table
+            striped
+            bordered
+            hover
+            responsive
+            className='table-sm'
+            className='shadow p-3 mb-5 bg-white rounded'
+          >
             <thead>
               <tr>
                 <th>ID</th>

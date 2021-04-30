@@ -90,7 +90,7 @@ const PlaceOrderScreen = ({ history }) => {
                 <ListGroup variant='flush'>
                   {cart.cartItems.map((item, index) => (
                     <ListGroup.Item key={index}>
-                      <Row>
+                      <Row className='shadow p-3 mb-5 bg-white rounded'>
                         <Col md={1}>
                           <Image
                             src={item.image}
@@ -116,7 +116,7 @@ const PlaceOrderScreen = ({ history }) => {
           </ListGroup>
         </Col>
         <Col md={4}>
-          <Card>
+          <Card className='shadow p-3 mb-5 bg-white rounded'>
             <ListGroup variant='flush'>
               <ListGroup.Item>
                 <h2>Order Summary</h2>

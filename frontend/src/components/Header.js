@@ -18,7 +18,12 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar className='navc' variant='dark' expand='lg' collapseOnSelect>
+      <Navbar
+        className='navbar-dark bg-primary'
+        variant='dark'
+        expand='lg'
+        collapseOnSelect
+      >
         <Container>
           <LinkContainer to='/'>
             <Navbar.Brand>MyCart</Navbar.Brand>
