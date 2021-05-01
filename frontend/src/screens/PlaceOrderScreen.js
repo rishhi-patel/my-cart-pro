@@ -87,10 +87,13 @@ const PlaceOrderScreen = ({ history }) => {
               {cart.cartItems.length === 0 ? (
                 <Message>Your cart is empty</Message>
               ) : (
-                <ListGroup variant='flush'>
+                <ListGroup
+                  variant='flush'
+                  className='shadow p-3 mb-5 bg-white rounded'
+                >
                   {cart.cartItems.map((item, index) => (
                     <ListGroup.Item key={index}>
-                      <Row className='shadow p-3 mb-5 bg-white rounded'>
+                      <Row>
                         <Col md={1}>
                           <Image
                             src={item.image}
