@@ -73,6 +73,10 @@ const updateOrderToPaid = asyncHandler(async (req, res) => {
     const updatedOrder = await order.save()
 
     res.json(updatedOrder)
+
+    //update order qty in databse
+    const { orderItems } = req.body
+    orderItems.map((product) => console.log(orderitems._id))
   } else {
     res.status(404)
     throw new Error('Order not found')
