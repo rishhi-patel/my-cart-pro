@@ -29,5 +29,6 @@ REACT_APP_BASE_URL = https://my-cart-api.vercel.app
 
 ```
 npm install
+npm run start
 
 ```
